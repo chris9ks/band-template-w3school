@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:  "Lato", sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+.navigation {
+    background-color: #000!important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navigation li {
+    float: left;
+    display: block;
+    padding: 12px 24px !important;
+    text-align: center;
+}
+
+.navigation li a {
+    color: #fff !important;
+    text-decoration: none;
+}
