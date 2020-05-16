@@ -1,26 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Band Template</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="header">
-        <nav class="navigation">
-            <ul>
-                <li><a href="#"> HOME </a></li>
-                <li><a href="#band"> BAND </a></li>
-                <li><a href="#tour"> TOUR </a></li>
-                <li><a href="#contact"> CONTACT </a></li>
-                <li><a href="#more"> MORE </a></li>
-            </ul>
-        </nav>
+      <nav class="navigation">
+        <ul>
+          <li><a href="#"> HOME </a></li>
+          <li><a href="#band"> BAND </a></li>
+          <li><a href="#tour"> TOUR </a></li>
+          <li><a href="#contact"> CONTACT </a></li>
+          <li><a href="#more"> MORE </a></li>
+        </ul>
+      </nav>
     </div>
-    
-    <div class="content"></div>
+
+    <div class="slideshow-container">
+      <div class="mySlide">
+        <img src="./images/1.jpg" alt="" />
+        <div class="slide-content">
+          <h3>Los Angeles</h3>
+          <p><b>We had the best time playing at Venice Beach</b></p>
+        </div>
+      </div>
+      <div class="mySlide">
+        <img src="./images/2.jpg" alt="" />
+        <div class="slide-content">
+          <h3>New York</h3>
+          <p><b>The atmosphere in New York is so hot</b></p>
+        </div>
+      </div>
+      <div class="mySlide">
+        <img src="./images/3.jpg" alt="" />
+        <div class="slide-content">
+          <h3>Chicago</h3>
+          <p><b>Thank you, Chicago - A night we won't forget !</b></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h1 class="title">THE BAND</h1>
+      <p class="notice">We love music</p>
+      <p class="info">
+        We have created a fictional band website. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Nulla a sequi voluptatibus, ut maxime
+        quisquam, in enim numquam quibusdam excepturi sapiente. Quaerat quisquam
+        repellat, neque amet unde modi consectetur iusto? Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Minima, sint? Quasi, illo harum modi
+        saepe eos cupiditate natus praesentium earum quibusdam possimus
+        accusantium architecto perferendis autem ipsum magnam officiis ullam.
+      </p>
+
+      <div class="member-container">
+        <div class="member">
+          <p>Alex</p>
+          <img src="./images/4.jpg" alt="" />
+        </div>
+        <div class="member">
+          <p>Adam</p>
+          <img src="./images/4.jpg" alt="" />
+        </div>
+        <div class="member">
+          <p>Adele</p>
+          <img src="./images/4.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="tour">
+      <div class="tour-container">
+        <h2>TOUR DATES</h2>
+        <p class="remember">Remember to book your tickets !</p>
+
+        <ul>
+          <li>
+            <span>October</span>
+            <span class="sold-out">Sold out</span>
+          </li>
+          <li>
+            <span>November</span>
+            <span class="sold-out">Sold out</span>
+          </li>
+          <li>
+            <span>December</span>
+            <span class="right">3</span>
+          </li>
+        </ul>
+
+        <div class="tickets-area">
+          <div class="tickets">
+            <img src="./images/5.jpg" alt="" />
+            <div class="tickets-content">
+              <p><b>New York</b></p>
+              <p>Fri 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button>Buy Ticket</button>
+            </div>
+          </div>
+          <div class="tickets">
+            <img src="./images/6.jpg" alt="" />
+            <div class="tickets-content">
+              <p><b>Paris</b></p>
+              <p>Sat 28 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button>Buy Ticket</button>
+            </div>
+          </div>
+          <div class="tickets">
+            <img src="./images/7.jpg" alt="" />
+            <div class="tickets-content">
+              <p><b>San Francisco</b></p>
+              <p>Sun 27 Nov 2016</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <button>Buy Ticket</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="contact-container">
+        <h2>CONTACT</h2>
+        <p class="note">Fan? Drop a note !</p>
+        <div class="information">
+          <div class="right">
+            <div class="about">
+              <i class="fa fa-map-marker"></i>
+              <p>Chicago, US</p>
+            </div>
+            <div class="about">
+              <i class="fa fa-phone"></i>
+              <p>Phone: +84968462404</p>
+            </div>
+            <div class="about">
+              <i class="fa fa-envelope"></i>
+              <p>Email: ngoctuan.uet.99@gmail.com</p>
+            </div>
+          </div>
+          <div class="form">
+            <form action="">
+              <div class="top">
+                <input type="text" name="name" id="name" placeholder="Name" class="half"/>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Email" class="half"
+                />
+              </div>
+              <input
+                type="text"
+                name="message"
+                id="massage"
+                placeholder="Message" class="bottom"
+              />
+              <button type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <img src="./images/8.jpg" alt="" style="width: 100%;">
+
     <div class="footer"></div>
-</body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

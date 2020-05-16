@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+}
+
+.navigation {
+  background-color: #000 !important;
+  width: 100%;
+  overflow: hidden;
+
+  li {
+    float: left;
+    display: block;
+    padding: 12px 24px !important;
+    text-align: center;
+
+    a {
+      color: #fff !important;
+      text-decoration: none;
+    }
+  }
+}
+
+.slideshow-container {
+    margin-top: 42px;
+    display: block;
+    position: relative;
+    width: 100%;
+
+    .mySlide {
+        
+        img {
+            width: 100%;
+        }
+
+        .slide-content {
+            padding-top: 32px !important;
+            padding-bottom: 32px !important;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            bottom: 0;
+            text-align: center;
+            color: #fff;
+
+            h3 {
+                font-size: 24px !important;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 10px 0;
+            }
+
+            p {
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+.main-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 64px 16px;
+    
+    .title {
+        letter-spacing: 4px;
+        word-spacing: 8px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .notice {
+      font-style: italic;
+      font-size: 15px;
+      opacity: 0.6;
+      line-height: 1.5;
+    }
+
+    .info {
+      text-align: justify !important;
+      margin: 15px 0;
+      padding: 10px 0;
+    }
+
+    .member-container {
+      padding: 32px 0;
+      display: flex;
+      flex-flow: row wrap;
+
+      .member {
+        width: 33.33%;
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+
+        p {
+          margin: 15px 0;
+        }
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+}
+
+.tour {
+  background-color: #000;
+  
+  .tour-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    color: #fff;
+
+    h2 {
+      text-align: center;
+      letter-spacing: 4px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 30px;
+      margin: 10px 0;
+    }
+
+    p.remember {
+      text-align: center;
+      font-style: italic;
+      opacity: 0.6;
+      margin: 15px 0;
+    }
+
+    ul {
+      list-style-type: none;
+      background-color: #fff;
+      color: #757575 !important;
+      
+      li {
+        padding: 8px 16px;
+        border: 1px solid #757575;
+        border-collapse: collapse;
+
+        .sold-out {
+          padding: 0 8px;
+          margin-left: 16px;
+          background-color: #f44336 !important;
+          color: #fff !important;
+        }
+
+        .right {
+          float: right;
+          padding: 0 8px;
+          margin-right: 16px !important;
+          background-color: #000;
+          color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .tickets-area {
+      display: flex;
+      flex-flow: row wrap;
+      margin : 0 -8px;
+      padding: 32px 0;
+    
+      .tickets {
+        @media screen and (max-width: 600px) {
+           width: 100%;
+        }
+
+        width: 33.33%;
+        padding: 0 8px;
+        color: #000;
+        margin-bottom: 16px;
+  
+        img {
+          width: 100%;
+        }
+
+        .tickets-content {
+          background-color: #fff;
+          padding: 12px;
+          p {
+            margin: 15px 0;
+          }
+  
+          button {
+            background-color: #000;
+            color: #fff;
+            padding: 8px;
+            border: none;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.contact {
+  background-color: #fff;
+
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+
+    h2 {
+      letter-spacing: 5px;
+      font-size: 30px;
+      font-weight: 400;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      margin-bottom: 10px 0;
+    }
+
+    .note {
+      font-style: italic;
+      font-size: 15px;
+      text-align: center;
+      opacity: 0.6;
+      margin: 15px 0;
+    }
+
+    .information {
+      display: flex;
+      padding: 32px 0;
+ 
+      .right {
+
+        width: 50%;
+        
+        i {
+          width: 30px;
+        }
+
+        .about {
+          display: flex;
+          padding: 5px;
+        }
+      }
+
+      .form {
+
+        input {
+          padding: 8px;
+        }
+
+        .top {
+            
+          .half {
+            float: left;
+            
+            width: 50%;
+            border: 1px solid #767676;
+          }
+        }
+
+        .bottom {
+          width: 100%;
+          margin-top: 10px;
+          border: 1px solid #767676;
+        }
+
+        button {
+          float: right;
+          margin-top: 20px;
+          background-color: #000;
+          border: none;
+          color: #fff;
+          padding: 8px 16px;
+          text-align: center;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button:hover {
+          background-color: #767676;
+          color: #000;
+        }
+      }
+    }
+  
+  }
+}
